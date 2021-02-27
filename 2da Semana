@@ -1,0 +1,29 @@
+# Pag-146-Ejer1
+ Hacer un programa que muestre la tabla de multiplicar del 1 al 10 de cualquier número.
+using System;
+
+namespace Tabla_de_Multiplicar
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+         
+            {
+                byte num, I;
+                int resul;
+                string linea;
+                Console.Write("Escriba un Numero:"); linea = Console.ReadLine();
+                num = byte.Parse(linea);
+                for (I = 1; I <= 10; I++)
+                {
+                    resul = num * I;
+                    Console.WriteLine("{0} * {1} = {2}", num, I, resul);
+                }
+                Console.Write("Pulse una Tecla:"); 
+                
+                Console.ReadLine();
+            }
+        }
+    }
+}
